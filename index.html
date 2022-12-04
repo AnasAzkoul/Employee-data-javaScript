@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navigation">
+        <h1>Employee Database Management</h1>
+        <button type="button" class="btn" id="addEmployee">Add a new employee</button>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="employees">
+      <div class="container">
+        <div class="employees__container">
+          <aside class="employees__list">
+            <h3 class="sub-heading">Employee List</h3>
+            <div id="list" class="employees__list"></div>
+          </aside>
+          <div class="employees__employee">
+            <h3 class="sub-heading">
+              Employee information
+            </h3>
+            <div class="employee-info" id="info">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- modal ------------------------------------------------------- -->
+    <div class="addEmployeeModal">
+      <form class="addEmployee__form">
+        Add a new Employee
+        <div class="form-control">
+          <input 
+            type="text" 
+            required placeholder="First Name" 
+            name="firstName"
+          >
+          <input 
+            type="text" 
+            required placeholder="Last Name" 
+            name="lastName"
+          >
+        </div>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="contactNumber" placeholder="Contact Number" required>
+        <input type="number" placeholder="Age" name="age" required>
+        <input type="date" placeholder="Date of Birth" name="dob" required>
+        <input type="number" placeholder="Salary" name="salary" required>
+        <input type="text" placeholder="address" name="address" required>
+        <input type="text" placeholder="Image Url" name="imageUrl">
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </main>
+  <script src="./index.js"></script>
+</body>
+</html>
